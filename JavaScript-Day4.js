@@ -177,6 +177,59 @@
 
 //------------------------------------------------task7--------------------------------------------------
 
-function multiply(a,b)
 
+
+
+
+
+
+
+
+
+
+//------------------------------------------------task1--------------------------------------------------
+
+// function add_suffix(suffix) {
+//     return function (input) {
+//         return input + suffix;
+//     }
+// }
+// const add_ly = add_suffix("ly");
+// console.log(add_ly("hopeless"));
+
+// const add_less = add_suffix("less");
+// console.log(add_less("fear"));
+
+//------------------------------------------------task2--------------------------------------------------
+
+// function add(n) {
+//     return function (n2) {
+//         return n + n2;
+//     }
+// }
+// console.log(add(10)(20));
+// console.log(add(0)(20));
+
+//------------------------------------------------task3--------------------------------------------------
+
+// function addsnum(n){
+//     return function(n2){
+//         return n+n2;
+//     }
+// }
+// const add1=addsnum(1);
+// console.log(add1(3));
+// console.log(add1(5.7));
+
+//------------------------------------------------task4--------------------------------------------------
+
+// function redundant(str) {
+//     return function () {
+//         return str;
+//     }
+// }
+// const f1 = redundant("Apple")
+// console.log(f1())
+
+//------------------------------------------------task5--------------------------------------------------
 
