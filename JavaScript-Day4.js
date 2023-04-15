@@ -177,15 +177,13 @@
 
 //------------------------------------------------task7--------------------------------------------------
 
-
-
-
-
-
-
-
-
-
+// function multiply(a, b) {
+//     if (b == 0) {
+//         return 0;
+//     }
+//     return a + multiply(a, b - 1)
+// }
+// console.log(multiply(11, 5))
 
 //------------------------------------------------task1--------------------------------------------------
 
@@ -232,4 +230,138 @@
 // console.log(f1())
 
 //------------------------------------------------task5--------------------------------------------------
+
+// function pow(a, b) {
+//     if (b == 0) {
+//         return 1;
+//     }
+//     return a * pow(a, b - 1);
+// }
+// console.log(pow(2, 4))
+
+//------------------------------------------------task6--------------------------------------------------
+//------------------------------------------------task7--------------------------------------------------
+
+// function even(n) {
+//     if (n % 2 == 1) {
+//         return false;
+//     }
+//     return n + even(n - 1)
+// }
+// console.log(even(234))
+
+//------------------------------------------------task7--------------------------------------------------
+
+// function multiplySum(num, k = 1) {
+//     if (k > 10) {
+//         return 0;
+//     }
+//     return num * k + multiplySum(num, k + 1);
+// }
+
+// const result = multiplySum(10);
+// console.log(result);
+
+//------------------------------------------------task7--------------------------------------------------
+
+
+// function kt(a, b) {
+//     let x = Math.max(a, b)
+//     for (let i = x; i > 0; i--) {
+//         if (a % i == 0 && b % i == 0) {
+//             return i;
+//         }
+//     }
+// }
+// console.log(kt(8, 32))
+
+//------------------------------------------------task7--------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function num(n) {
+//     const a = n % 10;
+//     const b = Math.floor(n / 10);
+//     if (n > (a * 10 + b)) {
+//         return true;
+//     }
+//     else if (n == (a * 10 + b)) {
+//         return true;
+//     }
+//     else return false;
+// }
+// console.log(num(43))
+
+
+
+
+
+// function boom(n) {
+//     for (let i = n; i >= 0; Math.floor(i / 10)) {
+//         i = i % 10;
+//         if (i == 7) {
+//             return "boom"
+//         }
+//         else return "there is no 7 in the arguments"
+//     }
+// }
+// console.log(boom(9874))
+
+let  k = 0;
+function oddeven(n = 43) {
+    for (let i = n; i >= 0; Math.floor(i / 10)) {
+        k = k + (i % 10);
+    }
+
+    if (k % 2 == 1) {
+        return odd;
+    }
+    else return even;
+}
+console.log(oddeven(43))
+
+
+
+
+// function sum(a=0){
+//     return function(b=0){
+//         return function(c=0){
+//             return function(d=0){
+//                 return function(e=0){
+//                     return function(f=0){
+//                         return a+b+c+d+e+f
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// console.log(sum(2)(3)(4)()()(6))
+
+
+
+function gcd(a, b) {
+    if (b == 0) {
+        return a;
+    } else {
+        return gcd(b, a % b);
+    }
+}
+console.log(gcd(32, 8))
+
 
